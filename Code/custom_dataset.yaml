@@ -1,0 +1,23 @@
+# parent
+# ├── yolov5
+# └── custom_dataset
+#     └── images
+#         └── train
+#         └── val
+#     └── annotations 
+#         └── train
+#         └── val
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../dataset_fotosarneses2_completo # dataset root dir
+train: images/train # train images (relative to 'path') 100 images
+val: images/val # val images (relative to 'path') 100 images
+test: images/test
+
+# Classes
+names:
+  0: guante
+  1: casco
+  2: bota
+  3: arnes_pecho
+  4: arnes_espalda
